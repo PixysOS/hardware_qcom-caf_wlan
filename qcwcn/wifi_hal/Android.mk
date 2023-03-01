@@ -125,7 +125,7 @@ LOCAL_REQUIRED_MODULES :=
 
 LOCAL_CFLAGS += -Wno-unused-parameter -Wall -Werror
 LOCAL_CPPFLAGS += -Wno-conversion-null
-ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+ifeq ($(TARGET_BUILD_VARIANT),eng)
 LOCAL_CFLAGS += "-DLOG_NDEBUG=0"
 endif
 
